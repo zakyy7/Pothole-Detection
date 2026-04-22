@@ -67,5 +67,14 @@ Berdasarkan hasil pengujian lapangan pada dataset yang terdiri dari 1.158 citra,
 
 1. Kloning repositori ini ke komputer Anda:
    ```bash
-   git clone [https://github.com/UsernameKamu/Skripsi.git](https://github.com/UsernameKamu/Skripsi.git)
-   cd Skripsi
+   git clone [https://github.com/zakyy7/Pothole-Detection.git](https://github.com/zakyy7/Pothole-Detection.git)
+   cd Pothole-Detection
+2. Instalasi Pustaka (Dependencies)
+Instal semua pustaka Python yang diperlukan agar sistem dapat berjalan tanpa kendala:
+   ```bash
+   pip install -r requirements.txt
+3. Menjalankan Dashboard
+Pastikan server OSRM lokal (Docker) sudah aktif jika ingin menggunakan fitur koreksi peta, lalu jalankan perintah:
+   ```bash
+   python -m streamlit run dashboard_streamlit.py
+   
