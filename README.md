@@ -19,6 +19,7 @@ Sistem ini mengombinasikan rekaman video dari kamera *smartphone* dengan data ko
 
 - **Tabel Hasil Pemetaan Geospasial**
 <img width="696" height="300" alt="image" src="https://github.com/user-attachments/assets/7d87c5f3-5714-468f-852a-ec1b3637cc2e" />
+
 - **Visualisasi Peta Digital**
 <img width="729" height="383" alt="image" src="https://github.com/user-attachments/assets/3789e057-638e-47de-879f-0cb3631ad614" />
 
