@@ -4,15 +4,19 @@ Proyek ini merupakan implementasi sistem deteksi kerusakan jalan berupa lubang (
 
 Sistem ini mengombinasikan rekaman video dari kamera *smartphone* dengan data koordinat lokasi dari *data logger* portabel buatan sendiri (berbasis Arduino Nano dan modul GPS NEO-7M). Hasil deteksi dan sinkronisasi data divisualisasikan dalam sebuah *dashboard* berbasis peta digital secara lokal.
 
-![Demo Dashboard]
+## Demo Dashboard
 - **Input Data (model, video, dan GPS) dan Kalibrasi Waktu**
 <img width="773" height="375" alt="image" src="https://github.com/user-attachments/assets/cc74a4d9-9cbc-4769-906a-d59f0bbb8ba3" />
+
 - **Kalibrasi Sistem**
 <img width="755" height="396" alt="image" src="https://github.com/user-attachments/assets/dd8f8b24-2ebc-453b-934d-ab8c5d0c6ed8" />
+
 - **Proses Deteksi**
 <img width="714" height="373" alt="image" src="https://github.com/user-attachments/assets/407389b0-c4e5-4099-8695-89d57c03f59f" />
+
 - **Hasil Deteksi dan Perhitungan Jarak**
 <img width="748" height="374" alt="image" src="https://github.com/user-attachments/assets/9aa21269-faaf-43b0-a784-b51345c8c75c" />
+
 - **Tabel Hasil Pemetaan Geospasial**
 <img width="696" height="300" alt="image" src="https://github.com/user-attachments/assets/7d87c5f3-5714-468f-852a-ec1b3637cc2e" />
 - **Visualisasi Peta Digital**
