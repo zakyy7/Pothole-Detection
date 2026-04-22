@@ -78,3 +78,7 @@ Pastikan server OSRM lokal (Docker) sudah aktif jika ingin menggunakan fitur kor
    ```bash
    python -m streamlit run dashboard_streamlit.py
    
+
+##👤 Penulis
+Muhamad Zaki Mubarok
+Program Studi Fisika, Universitas Islam Negeri Syarif Hidayatullah Jakarta
