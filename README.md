@@ -34,6 +34,18 @@ Sistem ini mengombinasikan rekaman video dari kamera *smartphone* dengan data ko
 - **Sinkronisasi Spasiotemporal**: Sistem melakukan sinkronisasi *frame* video dengan titik koordinat GPS berdasarkan *timestamp* (waktu), dan dilengkapi dengan pengaturan kompensasi latensi (*Time Offset*).
 - **Visualisasi Geospasial Interaktif**: Hasil disajikan dalam *dashboard* Streamlit yang menampilkan video hasil deteksi beranotasi, tabel metrik jarak geodesik antar lubang, serta peta lokasi kerusakan berbasis Folium.
 
+## Kalibrasi Sistem
+- **Time offset atau Lookahead (detik)**: Parameter ini digunakan untuk menyelaraskan waktu antara video dan data GPS. Karena keduanya direkam oleh perangkat yang berbeda, sering terjadi perbedaan waktu. Dengan offset ini, posisi lubang dari video bisa dipasangkan dengan koordinat GPS yang sesuai.
+
+- **Confidence Treshold**: Ini adalah batas minimum keyakinan model dalam mendeteksi objek. Jika nilai confidence di bawah threshold, maka deteksi akan diabaikan. Semakin tinggi nilainya, hasil deteksi lebih selektif, tetapi berisiko melewatkan beberapa lubang.
+
+- **Garis Batas Jarak (dari atas layar)**: Parameter ini digunakan untuk menentukan area valid deteksi pada frame video. Tujuannya agar sistem hanya mengambil objek yang berada pada posisi tertentu, sehingga mengurangi deteksi yang tidak relevan, misalnya objek yang terlalu jauh.
+
+-  **Jarak Visual antar Lubang (pixel)**: Parameter ini berfungsi untuk menghindari duplikasi deteksi. Jika dua deteksi terlalu dekat dalam jarak pixel tertentu, maka sistem akan menganggapnya sebagai satu lubang yang sama.
+
+- **Batas Durasi Video (detik)**: Parameter ini membatasi durasi video yang diproses. Hal ini berguna untuk efisiensi komputasi dan mempercepat proses analisis, terutama jika video berdurasi panjang.
+
+
 ## 📊 Performa Sistem
 Berdasarkan hasil pengujian lapangan pada dataset yang terdiri dari 1.158 citra, sistem ini mencatatkan performa sebagai berikut:
 - **Kinerja Model YOLOv11s**: Memiliki nilai *Precision* sebesar 87,6%, *Recall* sebesar 95,6%, *F1-score* 91,4%, dan mAP@0.5 mencapai 97,0%.
